@@ -19,19 +19,19 @@ class ProfilesTableSeeder extends Seeder
         //
         $profiles = [
             [
-                "user_id"        => 23,
-                "description"       => "",
-                "services"    => "",
-                "address"    => "",
+                "user_id"        => 1,
+                "description"       => "fisioterapista",
+                "services"    => "fisioterapia",
+                "address"    => "via milano 22",
                 "photo"    => "",
                 "visible"    => true,
                 
             ],
             [
-                "user_id"        => 12,
-                "description"       => "",
-                "services"    => "",
-                "address"    => "",
+                "user_id"        => 2,
+                "description"       => "dentista",
+                "services"    => "dentista",
+                "address"    => "via roma 10",
                 "photo"    => "",
                 "visible"    => true,
                 

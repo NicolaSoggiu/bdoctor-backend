@@ -15,16 +15,16 @@ return new class extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->unique();
+            $table->unsignedBigInteger('user_id');
             $table->text('description');
             $table->text('services');
             $table->string('address', 100);
             $table->string('photo', 255);
             $table->boolean('visible')->nullable()->default(false);
-            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
-
+            
             //foreign key
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
