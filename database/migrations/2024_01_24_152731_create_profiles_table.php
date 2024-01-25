@@ -21,10 +21,10 @@ return new class extends Migration
             $table->string('address', 100);
             $table->string('photo', 255);
             $table->boolean('visible')->nullable()->default(false);
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
 
             //foreign key
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
