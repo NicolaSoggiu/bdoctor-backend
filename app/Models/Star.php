@@ -11,11 +11,12 @@ class Star extends Model
     use HasFactory;
 
     protected $fillable = [
-        "vote",
-    ]
+        "vote"
+    ];
 
 
-    public function profile() {
-        return $this->belongsToMany(Profile::class)
+    public function profile()
+    {
+        return $this->belongsToMany(Profile::class);
     }
 }

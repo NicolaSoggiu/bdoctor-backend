@@ -11,11 +11,12 @@ class Typology extends Model
     use HasFactory;
 
     protected $fillable = [
-        "name",
-    ]
+        "name"
+    ];
 
 
-    public function profile() {
-        return $this->belongsToMany(Profile::class)
+    public function profile()
+    {
+        return $this->belongsToMany(Profile::class);
     }
 }

@@ -15,11 +15,12 @@ class Message extends Model
         "name",
         "lastname",
         "email",
-        "text",
-    ]
+        "text"
+    ];
 
 
-    public function profile() {
-        return $this->hasMany(Profile::class)
+    public function profile()
+    {
+        return $this->hasMany(Profile::class);
     }
 }

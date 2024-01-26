@@ -20,25 +20,25 @@ class ProfilesTableSeeder extends Seeder
         $profiles = [
             [
                 "user_id"        => 1,
-                "description"       => "fisioterapista",
-                "services"    => "fisioterapia",
+                "description"       => "Lorem dcuibeiucewk lcewco hocbichkl",
+                "services"    => "Ecografia, Radiografia, ECG",
                 "address"    => "via milano 22",
                 "photo"    => "",
                 "visible"    => true,
-                
+
             ],
             [
                 "user_id"        => 2,
-                "description"       => "dentista",
-                "services"    => "dentista",
+                "description"       => "Lorem 2 kfjbvei hvoeieoih oie",
+                "services"    => "Pulizia Denti, Carie, Sbiancamento Denti",
                 "address"    => "via roma 10",
                 "photo"    => "",
                 "visible"    => true,
-                
+
             ],
         ];
 
-        foreach ($profiles as $profile){
+        foreach ($profiles as $profile) {
             Profile::create($profile);
         }
     }

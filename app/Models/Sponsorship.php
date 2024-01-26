@@ -13,8 +13,8 @@ class Sponsorship extends Model
     protected $fillable = [
         "name",
         "price",
-        "duration",
-    ]
+        "duration"
+    ];
 
 
     public function user()

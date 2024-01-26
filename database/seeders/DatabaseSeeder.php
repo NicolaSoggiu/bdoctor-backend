@@ -25,6 +25,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersTableSeeder::class,
             ProfilesTableSeeder::class,
+            MessagesTableSeeder::class,
+            TypologiesTableSeeder::class,
+            StarsTableSeeder::class,
+            ReviewsTableSeeder::class,
+            SponsorshipsTableSeeder::class,
         ]);
     }
 }
