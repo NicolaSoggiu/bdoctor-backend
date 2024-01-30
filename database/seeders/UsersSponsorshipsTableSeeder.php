@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class UserSponsorshipTableSeeder extends Seeder
+class UsersSponsorshipsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
