@@ -19,8 +19,6 @@ class UserSponsorshipTableSeeder extends Seeder
     public function run()
     {
         //
-        $usersID = User::all(["id"]);
-        $sponsorshipsID = Sponsorship::all(["id"]);
 
         $userSponsorships =
             [
@@ -32,21 +30,5 @@ class UserSponsorshipTableSeeder extends Seeder
         foreach ($userSponsorships as $userSponsorship) {
             UserSponsorship::create($userSponsorship);
         }
-
-        // for ($i = 0; $i < 5; $i++) {
-        //     $UserSponsorship = new UserSponsorship();
-
-        //     $UserSponsorship->user_id = $usersID->random()->id;
-        //     $UserSponsorship->sponsorship_id = $sponsorshipsID->random()->id;
-
-        //     $selectedSponsorID = $UserSponsorship->sponsorship_id;
-        //     $durationInHours = $sponsorshipDurations[$selectedSponsorID];
-
-        //     $UserSponsorship->start_time = Carbon::now();
-
-        //     $UserSponsorship->end_time = Carbon::now()->addHours($durationInHours);
-
-        //     $UserSponsorship->save();
-        // }
     }
 }

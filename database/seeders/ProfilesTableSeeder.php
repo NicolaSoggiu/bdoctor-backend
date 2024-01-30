@@ -36,6 +36,15 @@ class ProfilesTableSeeder extends Seeder
                 "visible"    => true,
 
             ],
+            [
+                "user_id"        => 3,
+                "description"       => "Lorem 2 kfjbvei hvoeieoih oie",
+                "services"    => "Pulizia Denti, Carie, Sbiancamento Denti",
+                "address"    => "via roma 10",
+                "photo"    => "",
+                "visible"    => true,
+
+            ]
         ];
 
         foreach ($profiles as $profile) {

@@ -22,6 +22,9 @@ class StarsTableSeeder extends Seeder
             ],
             [
                 "vote"       => "3",
+            ],
+            [
+                "vote"       => "5",
             ]
         ];
 

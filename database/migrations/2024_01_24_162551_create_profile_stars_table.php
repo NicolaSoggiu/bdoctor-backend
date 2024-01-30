@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profile_typologie', function (Blueprint $table) {
+        Schema::create('profile_stars', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('profile_id');
-            $table->unsignedBigInteger('typologie_id');
+            $table->unsignedBigInteger('star_id');
             $table->timestamps();
 
             //foreign_key
             $table->foreign('profile_id')->references('id')->on('profiles');
-            $table->foreign('typologie_id')->references('id')->on('typologies');
+            $table->foreign('star_id')->references('id')->on('stars');
         });
     }
 
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile_typologie');
+        Schema::dropIfExists('profile_stars');
     }
 };

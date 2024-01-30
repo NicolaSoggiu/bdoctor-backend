@@ -22,6 +22,9 @@ class TypologiesTableSeeder extends Seeder
             ],
             [
                 "name"       => "Dentista",
+            ],
+            [
+                "name"       => "Fisioterapista",
             ]
         ];
 

@@ -32,6 +32,8 @@ class DatabaseSeeder extends Seeder
             ReviewsTableSeeder::class,
             SponsorshipsTableSeeder::class,
             UserSponsorshipTableSeeder::class,
+            ProfilesStarsTableSeeder::class,
+            ProfilesTypologiesTableSeeder::class,
         ]);
     }
 }
