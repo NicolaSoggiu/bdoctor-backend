@@ -17,7 +17,12 @@ class ProfileController extends Controller
     {
         $profiles = Profile::all();
         return response()->json($profiles);
-        
+    }
+
+    public function show($id)
+    {
+        $profile = Profile::findOrFail($id);
+        return response()->json($profile);
     }
     /**
      * Display the user's profile form.
